@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+  <title>Biglietto</title>
+</head>
+<body> 
+  <div class="container">
+    <h1>Calcola il prezzo del biglietto</h1>
+    <!-- form container -->
+    <div class="form-container">
+      <div class="dati-input">
+        <div class="row">
+          <div class="col">
+            <label for="name"> Nome Cognome</label>
+            <input type="text" id="name" placeholder="Inserisci il tuo nome">
+          </div>
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input type="number" min="1" id="km" placeholder="Inserisci i km da percorrere">
+          </div>
+          <div class="col">
+            <label for="eta">Fascia d'et&agrave;</label>
+            <select id="eta" name="eta">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+
+            </select>
+          </div>
+        </div>
+      <div class="row">
+        <button type="button" class="btn" name="genera">Genera</button>
+        <button type="button" class="btn" name="annulla">Annulla</button>
+      </div>
+      </div>
+    </div>
+
+    <h1>Il tuo Biglietto</h1>
+      <!-- ticket container -->
+      <div class="ticket-container">
+        <div class="ticket">
+          <h2>Dettaglio passeggeri</h2>
+          <div class="ticket-dati">
+            <div class="nome">
+              <h3>NOME PASSEGGERO</h2>
+              <div id="nome-passeggero">
+                cavallo
+              </div>
+            </div>
+            <div class="offerta">
+              <table>
+                <thead>
+                  <tr id="table-title">
+                    <td>Offerta</td>
+                    <td>Carrozza</td>
+                    <td>Codice CP</td>
+                    <td>Costo biglietto</td>
+                  </tr>
+              </thead>
+                <tbody>
+                    <td id="offerta">ciao</td>
+                    <td id="carrozza">ciao</td>
+                    <td id="codice-cp">ciao</td>
+                    <td id="costo-biglietto">ciao</td>
+                  </tbody>
+              </table>
+            </div>
+         </div>
+        </div>
+      </div>
+  </div>
+  <!-- js link -->
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>

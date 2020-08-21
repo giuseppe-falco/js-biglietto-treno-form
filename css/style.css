@@ -1,0 +1,130 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing:
+  border-box;
+}
+
+body{
+  background-color: #B91450;
+}
+
+.container{
+  width: 1280px;
+  margin:auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container h1{
+  text-align: center;
+  text-transform: uppercase;
+  color:#fff;
+}
+
+/* dati input */
+.dati-input, .ticket{
+  background-color: #fff;
+  box-shadow: 2px 2px 5px #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin:20px;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+label{
+  color:#B91450;
+  margin-bottom: 15px;
+}
+
+input, select{
+  border-color: #B91450;
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid #B91450;
+  width: 300px;
+  text-align: center;
+}
+
+input::placeholder{
+  text-align: center;
+  font-size: 15px;
+}
+
+input:focus::placeholder{
+  color:#fff;
+}
+
+input:focus, select:focus{
+  background-color: #B91450;
+  border: 1px solid #000;
+  color:#fff;
+}
+
+.btn{
+  color:#B91450;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 20px;
+  margin-top:50px;
+  background-color: lightgrey;
+  border: 1px solid #999;
+}
+
+.btn:hover{
+  background-color: grey;
+  color:#fff;
+  cursor:pointer;
+}
+
+.ticket{
+  border-radius:0;
+}
+
+table{
+  display: block;
+  height: 200px;
+  margin-left:50px;
+}
+
+.ticket>h2{
+  text-transform: uppercase;
+}
+.nome{
+  background-color: grey;;
+  padding: 0 20px;
+}
+
+#nome-passeggero{
+  padding-top: 60px;
+}
+
+.nome h3{
+  margin-top:30px;
+}
+
+#table-title{
+  font-weight: bold;
+}
+
+table thead td, table tbody td{
+  padding: 30px;
+}
+
+.ticket-dati{
+  display: flex;
+  border-top:1px solid grey;
+  border-bottom:1px solid grey;
+}
