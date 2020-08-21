@@ -17,11 +17,11 @@
         <div class="row">
           <div class="col">
             <label for="name"> Nome Cognome</label>
-            <input type="text" id="name" placeholder="Inserisci il tuo nome">
+            <input type="text" id="name"  required placeholder="Inserisci il tuo nome">
           </div>
           <div class="col">
             <label for="km">Km da percorrere</label>
-            <input type="number" min="1" id="km" placeholder="Inserisci i km da percorrere">
+            <input type="number" min="1" id="km"  required placeholder="Inserisci i km da percorrere">
           </div>
           <div class="col">
             <label for="eta">Fascia d'et&agrave;</label>
@@ -34,22 +34,22 @@
           </div>
         </div>
       <div class="row">
-        <button type="button" class="btn" name="genera">Genera</button>
-        <button type="button" class="btn" name="annulla">Annulla</button>
+        <button type="button" class="btn" name="genera" id="genera">Genera</button>
+        <button type="button" class="btn" name="annulla" id="annulla">Annulla</button>
       </div>
       </div>
     </div>
 
     <h1>Il tuo Biglietto</h1>
       <!-- ticket container -->
-      <div class="ticket-container">
+      <div  id="test" class="ticket-container">
         <div class="ticket">
           <h2>Dettaglio passeggeri</h2>
           <div class="ticket-dati">
             <div class="nome">
               <h3>NOME PASSEGGERO</h2>
               <div id="nome-passeggero">
-                cavallo
+                
               </div>
             </div>
             <div class="offerta">
@@ -63,10 +63,10 @@
                   </tr>
               </thead>
                 <tbody>
-                    <td id="offerta">ciao</td>
-                    <td id="carrozza">ciao</td>
-                    <td id="codice-cp">ciao</td>
-                    <td id="costo-biglietto">ciao</td>
+                    <td id="offerta"></td>
+                    <td id="carrozza"></td>
+                    <td id="codice-cp"></td>
+                    <td id="costo-biglietto"></td>
                   </tbody>
               </table>
             </div>
